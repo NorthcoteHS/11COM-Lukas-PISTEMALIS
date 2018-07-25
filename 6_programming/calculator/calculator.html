@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Uncomment to use external CSS
+        <link rel="stylesheet" href="PATH/TO/EXTERNAL/STYLES.CSS">
+        -->
+
+        <style type="text/css">
+            /* Your CSS goes here */
+        </style>
+    </head>
+
+    <body>
+        <h1>Calculator</h1>
+
+        <input type="text" id="number1"><br> <input type="text" id="number2"><br><br>
+        <button onclick="myFunction()">Calculate</button>
+<select id="thing">
+        <option value="add">Add</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+        <option value="subtract">Subtract</option>
+</select>
+
+
+
+
+        <script>
+        function myFunction() {
+             var x = document.getElementById("number1").value;
+             x = parseInt(x);
+             var y = document.getElementById("number2").value;
+             y = parseInt(y);
+             var z = document.getElementById("thing");
+             var strUser = z.options[z.selectedIndex].value;
+
+             if (strUser =="add") {
+                 var addans = x + y;
+                 alert(addans);
+
+             }
+             else if (strUser =="multiply") {
+                 var addans = x * y;
+                 alert(addans);
+             }
+             else if (strUser =="divide") {
+                 var addans = x / y;
+                 alert(addans);
+             }
+             else if (strUser =="subtract") {
+                 var addans = x - y;
+                 alert(addans);
+             }
+
+        }
+        </script>
+    </body>
+</html>
