@@ -24,9 +24,14 @@
 
         <script>
             function opfunc() {
-               var stringy = document.getElementById("text1");
-               var sillystring = stringy.substr(1);
-               alert(sillystring);
+               var stringy = document.getElementById("text1").value;
+               if (stringy.charAt(0)== 'a'){
+
+                   var sillystring = stringy.substr(1);
+                   var x = sillystring + "ay"
+                   alert(x);
+
+               }
             }
         </script>
     </body>
